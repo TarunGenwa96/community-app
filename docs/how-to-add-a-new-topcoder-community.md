@@ -1,5 +1,5 @@
 # How to Add a New Topcoder Community?
-*NOTE: Related code is not quite stable yet, be aware that this document might be out of sync with the actual behavior. Current version of this instruction corresponds to the code commit `ec6730c9fc02ee8a4bece061cae5a3eb9d2ce779`*
+*NOTE: Related code is not quite stable yet, be aware that this document might be out of sync with the actual behavior. Current version of this instruction corresponds to the code commit `512d4e510b31e94682b25517cc9e9733656240a1`*
 
 To add a new community with the name **demo**, we should follow the following protocol:
 
@@ -121,7 +121,9 @@ To add a new community with the name **demo**, we should follow the following pr
     - Inside `/src/shared/routes/Communities/Demo/Routes.jsx` you define necesary routing, as with usual `react-router` routing code;
     - Finally, you link this routing code into `/src/shared/routes/Communities/Routes.jsx`.
 
-5.  At this point **demo** community is ready and accessible at the `/community/demo` route of the App (i.e., if we deploy dev version of the App to `community-west.topcoder-dev.com`, community will be accessible as `community-west.topcoder-dev.com/community/demo`).
+5. Depending on how you added the Home route to the `/src/shared/routes/Communities/Routes.jsx` file it is likely that it will need container. Place it in `src/shared/containers/tc-communities/demo/Home.js` you can re-use one of the existing sub-communities.
+
+6.  At this point **demo** community is ready and accessible at the `/community/demo` route of the App (i.e., if we deploy dev version of the App to `community-west.topcoder-dev.com`, community will be accessible as `community-west.topcoder-dev.com/community/demo`).
 
     To make **demo** community accessible via a dedicated sub-domain, e.g. like `demo.topcoder-dev.com`, you should use the `subdomains` property of community configuration. Beside it you should:
     -   Ensure that the web-server where the App is deployed allows access to the subdomain `demo.topcoder-dev`, and redirects incoming requests to the App.

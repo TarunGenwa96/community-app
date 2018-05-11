@@ -12,6 +12,7 @@ import DemoExpert from './DemoExpert';
 import QA from './QA';
 import SRMx from './SRMx';
 import TaskForce from './TaskForce';
+import TCO from './TCO';
 import TcProdDev from './TcProdDev';
 import Veterans from './Veterans';
 import Wipro from './Wipro';
@@ -29,6 +30,7 @@ export default function Communities({
     case 'qa': return <QA base={base} member={member} meta={meta} />;
     case 'srmx': return <SRMx base={base} meta={meta} />;
     case 'taskforce': return <TaskForce base={base} meta={meta} />;
+    case 'tco': return <TCO base={base} meta={meta} />;
     case 'tc-prod-dev': return <TcProdDev base={base} meta={meta} />;
     case 'veterans':
       return <Veterans base={base} member={member} meta={meta} />;

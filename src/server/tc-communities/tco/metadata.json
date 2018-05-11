@@ -1,0 +1,25 @@
+{
+  "challengeFilter": {
+    "groupIds": [],
+    "or": [{
+      "tags": ["TCO"]
+    }]
+  },
+  "communityId": "tco",
+  "communityName": "Topcoder Open",
+  "groupIds": [],
+  "hideSearch": true,
+  "logos": [{
+    "img": "/community-app-assets/themes/tco/logo_topcoder_with_name.svg",
+    "url": "https://www.topcoder.com"
+  }],
+  "menuItems": [{
+    "title": "Home",
+    "url": "/"
+  }],
+  "leaderboardApiUrl": "https://api.topcoder.com/v4/looks/458/run/json/",
+  "newsFeed": "http://www.topcoder.com/feed",
+  "subdomains": ["tco"],
+  "description": "The Ultimate Programming & Design Tournament",
+  "image": "tco.jpg"
+}
