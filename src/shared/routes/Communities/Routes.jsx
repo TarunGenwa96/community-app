@@ -16,6 +16,7 @@ import TcProdDev from './TcProdDev';
 import Veterans from './Veterans';
 import Wipro from './Wipro';
 import Cognitive from './Cognitive';
+import Mobile from './Mobile';
 
 export default function Communities({
   base, communityId, member, meta,
@@ -26,6 +27,8 @@ export default function Communities({
     case 'community-2': return <Community2 base={base} meta={meta} />;
     case 'cs': return <CS base={base} meta={meta} />;
     case 'demo-expert': return <DemoExpert base={base} meta={meta} />;
+    case 'mobile':
+      return <Mobile base={base} member={member} meta={meta} />;
     case 'qa': return <QA base={base} member={member} meta={meta} />;
     case 'srmx': return <SRMx base={base} meta={meta} />;
     case 'taskforce': return <TaskForce base={base} meta={meta} />;
